@@ -15,7 +15,7 @@ class User extends Controller
       if (!Session::get('login')){
         return redirect('login')->with('alert', 'Kamu harus login dulu');
       }else{
-        return view('user');
+        return view('home');
       }
     }
 
@@ -29,7 +29,7 @@ class User extends Controller
 
       $data = ModelUser::where('email',$email)->first();
 
-      if(count($data) > 0 ){
+      if($data != null && $data->name != null ){
         if(Hash::check($password, $data->password)){
           Session::put('name', $data->name);
           Session::put('email', $data->email);
@@ -54,18 +54,18 @@ class User extends Controller
 
     public function registerPost(Request $request){
       $this->validate($request, [
-            'name' => 'required|min:4',
-            'email' => 'required|min:4|email|unique:users',
-            'password' => 'required',
-            'confirmation' => 'required|same:password',
-        ]);
+        'name'=> 'required|min:4',
+        'email'=> 'required|min:4|email|unique:users',
+        'password'=> 'required',
+        'confirmation'=> 'required|same:password',
+      ]);
 
       $data = new ModelUser();
       $data->name = $request->name;
       $data->email = $request->email;
       $data->password = bcrypt($request->password);
       $data->save();
-      return redirect('login')->with('alert-success', 'Kamu berhasil Register');
+      return redirect('login')->with('alert-success', 'Kamu berhasil login');
 
     }
 }
