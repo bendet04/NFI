@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/admin', function () {
-    return view('admin/index');
+    return view('admin/content');
 });
 
 Route::get('/halaman-kedua', function () {
