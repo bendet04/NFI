@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/admin', function () {
+    return view('admin/index');
+});
+
 Route::get('/halaman-kedua', function () {
     return view('halamandua');
 });
