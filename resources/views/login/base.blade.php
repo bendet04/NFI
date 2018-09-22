@@ -36,20 +36,6 @@
 <body>
 
 <div id="wrapper">
-    <aside id="sideBar">
-        <ul class="main-nav">
-            <!-- Your Logo Or Site Name -->
-            <li class="nav-brand">
-                <a href="/">Anak IT - Home</a>
-            </li>
-            <li>
-                <a href="#">- Tambah Kontak</a>
-            </li>
-            <li>
-                <a href="#">- Daftar Kontak</a>
-            </li>
-        </ul>
-    </aside>
 
     @yield('content') {{-- Semua file konten kita akan ada di bagian ini --}}
 

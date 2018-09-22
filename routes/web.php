@@ -11,21 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/admin', function () {
-    return view('admin/content');
-});
-
-Route::get('/halaman-kedua', function () {
-    return view('halamandua');
-});
-
-Route::get('/home_user', 'User@index');
-Route::get('/login', 'User@login');
-Route::post('/loginPost', 'User@loginPost');
+Route::get('/', 'Login@index');
+Route::get('/login', 'Login@login');
+Route::post('/loginPost', 'Login@loginPost');
 Route::get('/register', 'User@register');
 Route::post('/registerPost', 'User@registerPost');
-Route::get('/logout', 'User@logout');
+Route::get('/logout', 'Login@logout');
+Route::get('/dashboard', 'Dashboard@index');

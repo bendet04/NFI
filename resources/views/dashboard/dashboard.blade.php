@@ -1,4 +1,4 @@
-@extends('/admin/index')
+@extends('layout/base')
 @section('content')
 <!-- Small boxes (Stat box) -->
 <div class="row">
@@ -285,18 +285,18 @@
     <!-- /.box -->
 
     <!-- quick email widget -->
-    <div class="box box-info">
+    <!-- <div class="box box-info">
       <div class="box-header">
         <i class="fa fa-envelope"></i>
 
         <h3 class="box-title">Quick Email</h3>
-        <!-- tools box -->
+
         <div class="pull-right box-tools">
           <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip"
                   title="Remove">
             <i class="fa fa-times"></i></button>
         </div>
-        <!-- /. tools -->
+
       </div>
       <div class="box-body">
         <form action="#" method="post">
@@ -316,7 +316,7 @@
         <button type="button" class="pull-right btn btn-default" id="sendEmail">Send
           <i class="fa fa-arrow-circle-right"></i></button>
       </div>
-    </div>
+    </div> -->
 
   </section>
   <!-- /.Left col -->
