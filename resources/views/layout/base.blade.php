@@ -27,6 +27,14 @@
   <link rel="stylesheet" href="{{url('adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{url('adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
+  <!-- Datatables -->
+  <link rel="stylesheet" href="{{url('adminlte/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css')}}">
+
+  <!-- jQuery 3 -->
+  <script src="{{url('adminlte/bower_components/jquery/dist/jquery.min.js')}}"></script>
+  <!-- Datatables -->
+  <script src="{{url('adminlte/bower_components/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+  <script src="{{url('adminlte/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js')}}"></script>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -272,7 +280,7 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
-<script src="{{url('adminlte/bower_components/jquery/dist/jquery.min.js')}}"></script>
+<!-- <script src="{{url('adminlte/bower_components/jquery/dist/jquery.min.js')}}"></script> -->
 <!-- jQuery UI 1.11.4 -->
 <script src="{{url('adminlte/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -296,6 +304,7 @@
 <script src="{{url('adminlte/bower_components/bootstrap-daterangepicker/daterangepicker.js')}}"></script>
 <!-- datepicker -->
 <script src="{{url('adminlte/bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js')}}"></script>
+
 <!-- Bootstrap WYSIHTML5 -->
 <script src="{{url('adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}"></script>
 
@@ -308,5 +317,6 @@
 <script src="{{url('adminlte/dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{url('adminlte/dist/js/demo.js')}}"></script>
+
 </body>
 </html>

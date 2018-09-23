@@ -7,9 +7,13 @@ use Illuminate\Http\Request;
 
 class User extends Controller
 {
-    //
+    public function index(){
+      $data = ModelUser::all ();
+      return view ( 'user/index' )->withData ( $data );
+    }
+
     public function register(Request $request){
-      return view('register');
+      return view('user/register');
     }
 
     public function registerPost(Request $request){

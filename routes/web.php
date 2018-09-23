@@ -14,7 +14,8 @@
 Route::get('/', 'Login@index');
 Route::get('/login', 'Login@login');
 Route::post('/loginPost', 'Login@loginPost');
-Route::get('/register', 'User@register');
+Route::get('/register', 'User@register')->name('register');
 Route::post('/registerPost', 'User@registerPost');
-Route::get('/logout', 'Login@logout');
+Route::get('/logout', 'Login@logout')->name('logout');
 Route::get('/dashboard', 'Dashboard@index');
+Route::get('/user', 'User@index');
