@@ -4,7 +4,7 @@
     <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
-      <li><a href="dasboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+      <li><a href="dashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
       <li class="treeview">
         <a href="#">
           <i class="fa fa-group"></i>
@@ -14,7 +14,7 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Operation</a></li>
+          <li><a href="user"><i class="fa fa-circle-o"></i> Operation</a></li>
           <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Role</a></li>
           <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Access</a></li>
         </ul>
