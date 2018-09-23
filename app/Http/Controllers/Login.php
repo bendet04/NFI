@@ -14,7 +14,7 @@ class Login extends Controller
       if (!Session::get('login')){
         return redirect('login')->with('alert', 'Kamu harus login dulu');
       }else{
-        return redirect('dashboard/dashboard');
+        return redirect('dashboard');
       }
     }
 
