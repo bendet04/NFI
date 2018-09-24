@@ -51,10 +51,10 @@
 
 
   <!-- Header -->
-  @include('/layout/header')
+  @include('/layouts/header')
 
   <!-- Sidebar  -->
-  @include('/layout/sidebar')
+  @include('/layouts/sidebar')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -82,7 +82,7 @@
   <!-- /.content-wrapper -->
 
 <!-- footer -->
-  @include('/layout/footer')
+  @include('/layouts/footer')
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Create the tabs -->

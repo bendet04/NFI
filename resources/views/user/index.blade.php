@@ -1,4 +1,4 @@
-@extends('layout/base')
+@extends('layouts/base')
 @section('content')
 <button class="add-modal btn btn-primary">
   <span class="glyphicon glyphicon-plus"></span> Tambah User

@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class User extends Controller
 {
+
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index(){
       $data = ModelUser::all ();
       return view ( 'user/index' )->withData ( $data );
