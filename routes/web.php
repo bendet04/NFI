@@ -16,4 +16,5 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/logout', 'Login@logout')->name('logout');
     Route::get('/dashboard', 'Dashboard@index');
     Route::get('/user', 'User@index');
+    Route::get('/registerPost', 'User@registerPost');
 });

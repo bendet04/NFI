@@ -2,7 +2,7 @@
   <!-- Logo -->
   <a href="{{url('dashboard')}}" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>N</b>LI</span>
+    <span class="logo-mini"><b>N</b>FI</span>
     <!-- logo for regular state and mobile devices -->
     <span class="logo-lg"><b>New</b>Line</span>
   </a>
